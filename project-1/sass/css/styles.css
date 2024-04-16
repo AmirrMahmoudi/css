@@ -95,6 +95,7 @@ h4 {
   background-color: var(--body-color);
   top: 0;
   left: 0;
+  padding: 0.75rem 0;
 }
 
 .nav {
@@ -102,10 +103,18 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    top: 4rem;
+    top: -100%;
     left: 0;
     right: 0;
     background-color: var(--container-color);
@@ -114,6 +123,7 @@ h4 {
     margin: 0 auto;
     border-radius: 2rem;
     padding: 2.5rem 0;
+    transition: 0.4s;
   }
 }
 .nav__list {
@@ -122,6 +132,13 @@ h4 {
   flex-direction: column;
   align-items: center;
   row-gap: 1.5rem;
+}
+.nav__link, .nav__logo, .nav__toggle {
+  color: var(--title-color);
+}
+
+.show-menu {
+  top: 4rem;
 }
 
 @media screen and (min-width: 800px) {
