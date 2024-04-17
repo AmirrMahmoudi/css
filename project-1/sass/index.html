@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">website.example</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">صفحه اصلی</a>
+              <a class="nav__link" href="#home">صفحه اصلی</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">درباره ما</a>
+              <a class="nav__link" href="#about">درباره ما</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">خدمات</a>
+              <a class="nav__link" href="#services">خدمات</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">ارتباط با ما</a>
+              <a class="nav__link" href="#contact">ارتباط با ما</a>
             </li>
             <!-- <i class="bi bi-toggle-off"></i> -->
           </ul>
@@ -37,7 +37,8 @@
         <a class="button button__header" href="#">لورم ایپسوم</a>
       </nav>
     </header>
-    <section class="home section">
+
+    <section class="home section" id="home">
       <div class="home__container container">
         <article class="svg__img home__img">
           <img src="./images/1.svg" alt="home-image" />
@@ -57,7 +58,7 @@
       </div>
     </section>
 
-    <section class="about section">
+    <section class="about section" id="about">
       <div class="about__container container">
         <article class="about__info">
           <h1 class="about__title section__title">
@@ -75,6 +76,7 @@
       </div>
     </section>
 
+    <section style="height: 160vh"></section>
     <script src="./js/app.js"></script>
   </body>
 </html>
