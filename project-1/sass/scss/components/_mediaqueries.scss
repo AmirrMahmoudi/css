@@ -10,7 +10,8 @@
   .home__container,
   .about__container,
   .support__container,
-  .services__container {
+  .services__container,
+  .app__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -18,11 +19,18 @@
   .home__img {
     order: 1;
   }
+
+  .app__title,
+  .app__description {
+    text-align: right;
+  }
+
   .about__info,
   .support__info {
     text-align: right;
   }
-  .about__img {
+  .about__img,
+  .app__img {
     order: -1;
   }
 }
@@ -36,6 +44,10 @@
     &__toggle {
       display: none;
     }
+  }
+
+  .app__buttons {
+    justify-content: start;
   }
 }
 
@@ -68,7 +80,8 @@
 
   .home__container,
   .about__container,
-  .support__container {
+  .support__container,
+  .app__container {
     column-gap: 6rem;
   }
   .services__container {

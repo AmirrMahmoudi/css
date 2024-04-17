@@ -130,6 +130,11 @@ h4 {
   background: var(--primary-color);
   color: var(--container-color);
 }
+.button-flex {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
 
 .header {
   position: fixed;
@@ -226,6 +231,22 @@ h4 {
   text-align: center;
 }
 
+.app__container {
+  gap: 2rem;
+}
+.app__info {
+  text-align: center;
+}
+.app__description {
+  margin-bottom: 1.5rem;
+}
+.app__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 .support__container {
   gap: 2rem;
 }
@@ -260,7 +281,8 @@ h4 {
   .home__container,
   .about__container,
   .support__container,
-  .services__container {
+  .services__container,
+  .app__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -268,11 +290,16 @@ h4 {
   .home__img {
     order: 1;
   }
+  .app__title,
+  .app__description {
+    text-align: right;
+  }
   .about__info,
   .support__info {
     text-align: right;
   }
-  .about__img {
+  .about__img,
+  .app__img {
     order: -1;
   }
 }
@@ -283,6 +310,9 @@ h4 {
   }
   .nav__toggle {
     display: none;
+  }
+  .app__buttons {
+    justify-content: start;
   }
 }
 @media screen and (min-width: 800px) {
@@ -312,7 +342,8 @@ h4 {
   }
   .home__container,
   .about__container,
-  .support__container {
+  .support__container,
+  .app__container {
     column-gap: 6rem;
   }
   .services__container {
