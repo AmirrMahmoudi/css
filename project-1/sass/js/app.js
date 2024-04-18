@@ -1,7 +1,6 @@
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
-const navLink = document.querySelectorAll(".nav__link")
-
+const navLink = document.querySelectorAll(".nav__link");
 
 // show menu
 navToggle.addEventListener("click", () => {
@@ -45,3 +44,11 @@ function scrollActive() {
   });
 }
 window.addEventListener("scroll", scrollActive);
+
+// show scroll up
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
