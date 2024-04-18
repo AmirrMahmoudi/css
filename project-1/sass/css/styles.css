@@ -247,6 +247,29 @@ h4 {
   gap: 0.5rem;
 }
 
+.contact {
+  padding: 7rem 0 4rem 0;
+}
+.contact__container {
+  padding-bottom: 3rem;
+}
+.contact__description {
+  text-align: center;
+}
+.contact__info {
+  display: grid;
+  row-gap: 0.75rem;
+}
+.contact__address {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--title-color);
+}
+.contact__information {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
 .support__container {
   gap: 2rem;
 }
@@ -282,7 +305,8 @@ h4 {
   .about__container,
   .support__container,
   .services__container,
-  .app__container {
+  .app__container,
+  .contact__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -290,12 +314,12 @@ h4 {
   .home__img {
     order: 1;
   }
-  .app__title,
-  .app__description {
-    text-align: right;
-  }
   .about__info,
-  .support__info {
+  .support__info,
+  .app__title,
+  .app__description,
+  .contact__title,
+  .contact__description {
     text-align: right;
   }
   .about__img,
@@ -348,6 +372,9 @@ h4 {
   }
   .services__container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .contact__container {
+    grid-template-columns: 3fr 1.5fr 1.25fr;
   }
 }
 
